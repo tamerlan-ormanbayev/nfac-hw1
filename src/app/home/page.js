@@ -82,7 +82,7 @@ export default function Home() {
                 <CardTitle>Recent Posts</CardTitle>
             </CardHeader>
             {posts.map((post) => (
-            <CardContent className="grid gap-4">
+            <CardContent key={post.id} className="grid gap-4">
                 <Link
                     href="#"
                     className="flex items-center gap-4 text-sm font-medium hover:underline underline-offset-4"
